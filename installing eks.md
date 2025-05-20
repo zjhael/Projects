@@ -2,16 +2,10 @@
 
 Please follow the prerequisites doc before this.
 
-## Install using Fargate
+## Install using Fargate and change the cluster name and your region
 
 ```
 eksctl create cluster --name jhon-cluster --region ap-southeast-1 --fargate
-```
-
-## Change the cluster name and your region
-
-```
-
 ```
 
 ## Delete the cluster
