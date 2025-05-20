@@ -8,7 +8,7 @@
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/examples/2048/2048_full.yaml
 ```
 
-## Check the status of the manifest file
+## Verify that the deployments are running
 ```
 kubectl get pods -n game-2048
 ```
