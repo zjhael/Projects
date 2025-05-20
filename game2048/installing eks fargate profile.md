@@ -1,4 +1,4 @@
-## Please follow the prerequisites doc before this.
+## Please follow the prerequisites documentation before this.
 
 ## Provision the EKS Cluster with fargate as compute engine
 
