@@ -12,7 +12,9 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-load-bala
 ```
 kubectl get pods -n game-2048
 ```
+```
 kubectl get svc -n game-2048
+```
 ```
 kubectl get ingress -n game-2048
 ```
