@@ -96,7 +96,7 @@ eksctl create iamserviceaccount \
 
 ```Replace <YOUR_AWS_ACCOUNT_ID> with your actual account ID.```
 
-```Install AWS Load Balancer Controller via Helm```
+##Install AWS Load Balancer Controller via Helm
 ```
 helm repo add eks https://aws.github.io/eks-charts
 helm repo update eks
@@ -112,7 +112,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n ku
 
 ```Replace vpcId with your actual VPC ID.```
 
-```Verify Deployment```
+##Verify Deployment
 ```
 kubectl get deploy -n kube-system aws-load-balancer-controller
 ```
@@ -122,13 +122,15 @@ kubectl get deploy -n kube-system
 
 ```You should see your controller deployed and managing Ingress resources.```
 
-```Access the App```
+##Access the App
 ```
 kubectl get ingress -n game-2048
 ```
 
 ```Copy the ADDRESS and open it in a browser to play the 2048 game!```
 
-```Cleanup```
-eksctl delete cluster --name demo-cluster-1 --region ap-southeast-1
+##Cleanup
+```
+eksctl delete cluster --name jhon-cluster --region ap-southeast-1
+```
 
